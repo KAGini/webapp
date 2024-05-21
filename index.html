@@ -170,7 +170,7 @@ function startNewRound() {
     currentPairId++;
 }
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+Telegram.WebApp.onEvent("mainButtonClicked", () => {
     tg.sendData(correctAnswersCount);
     alert("anus");
     tg.close();
