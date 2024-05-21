@@ -110,7 +110,7 @@ function startNewRound() {
     currentPairId++;
 }
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+window.Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(correctAnswersCount);
     tg.close();
 });
